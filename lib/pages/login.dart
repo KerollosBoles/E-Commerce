@@ -1,3 +1,4 @@
+import 'package:e_commerce/shared/const_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/pages/shared/const_text_field.dart';
 class Login extends StatelessWidget {
@@ -12,6 +13,8 @@ class Login extends StatelessWidget {
             children: [
               const SizedBpx(height: 64,
               ),
+              MyTextField(),
+              SizedBox(height: 33),
               
                       
             ],
