@@ -19,8 +19,7 @@ class Login extends StatelessWidget {
                 decoration: InputDecoration,
                 hintText: "Enter your password",
                 enabledBorder: OutlineInputBorder(
-                    borderSide: Divider.createBorderSide(context)),
-                focusedBorder: OutlineInputBorder(borderSide(color: Colors.grey)),
+                    borderSide: Divider.createBorderSide(context)),                focusedBorder: OutlineInputBorder(borderSide(color: Colors.grey)),
                 fielled: true,
                 contentPadding: const EdgeInsets.all(8),
               )
