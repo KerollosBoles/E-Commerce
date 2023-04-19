@@ -23,6 +23,17 @@ class Login extends StatelessWidget {
                 fielled: true,
                 contentPadding: const EdgeInsets.all(8),
               )
+              TextField(
+                keyboardType: TextInputType.password,
+                obscureText: false,
+                decoration: InputDecoration,
+                hintText: "Password",
+                enabledBorder: OutlineInputBorder(
+                    borderSide: Divider.createBorderSide(context)),                focusedBorder: OutlineInputBorder(borderSide(color: Colors.grey)),
+                fielled: true,
+                contentPadding: const EdgeInsets.all(8),
+              )
+              const SizedBpx(height: 64,),              
             ],
           ),
         ),
