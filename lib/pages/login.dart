@@ -11,29 +11,9 @@ class Login extends StatelessWidget {
           child: Column(
             children: [
               const SizedBpx(height: 64,
-              
               ),
-              TextField(
-                keyboardType: TextInputType.emailAddress,
-                obscureText: false,
-                decoration: InputDecoration,
-                hintText: "Email Address or User Name",
-                enabledBorder: OutlineInputBorder(
-                    borderSide: Divider.createBorderSide(context)),                focusedBorder: OutlineInputBorder(borderSide(color: Colors.grey)),
-                fielled: true,
-                contentPadding: const EdgeInsets.all(8),
-              )
-              TextField(
-                keyboardType: TextInputType.password,
-                obscureText: false,
-                decoration: InputDecoration,
-                hintText: "Password",
-                enabledBorder: OutlineInputBorder(
-                    borderSide: Divider.createBorderSide(context)),                focusedBorder: OutlineInputBorder(borderSide(color: Colors.grey)),
-                fielled: true,
-                contentPadding: const EdgeInsets.all(8),
-              )
-              const SizedBpx(height: 64,),              
+              
+                      
             ],
           ),
         ),
