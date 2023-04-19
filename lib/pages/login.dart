@@ -8,7 +8,17 @@ class Login extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("data"),
+            TextField(
+              keyboardType: TextInputType.text,
+              obscureText: true,
+              decoration: InputDecoration,
+              hintText: "Enter your password",
+              enabledBorder: OutlineInputBorder(
+                  borderSide: Divider.createBorderSide(context)),
+              focusedBorder: OutlineInputBorder(borderSide(color: Colors.grey)),
+              fielled: true,
+              contentPadding: const EdgeInsets.all(8),
+            )
           ],
         ),
       ),
