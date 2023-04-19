@@ -14,7 +14,7 @@ class Login extends StatelessWidget {
               
               ),
               TextField(
-                keyboardType: TextInputType.text,
+                keyboardType: TextInputType.emailAddress,
                 obscureText: true,
                 decoration: InputDecoration,
                 hintText: "Enter your password",
