@@ -6,20 +6,26 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
-          children: [
-            TextField(
-              keyboardType: TextInputType.text,
-              obscureText: true,
-              decoration: InputDecoration,
-              hintText: "Enter your password",
-              enabledBorder: OutlineInputBorder(
-                  borderSide: Divider.createBorderSide(context)),
-              focusedBorder: OutlineInputBorder(borderSide(color: Colors.grey)),
-              fielled: true,
-              contentPadding: const EdgeInsets.all(8),
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(33.3)
+          child: Column(
+            children: [
+              const SizedBpx(height: 64,
+              
+              ),
+              TextField(
+                keyboardType: TextInputType.text,
+                obscureText: true,
+                decoration: InputDecoration,
+                hintText: "Enter your password",
+                enabledBorder: OutlineInputBorder(
+                    borderSide: Divider.createBorderSide(context)),
+                focusedBorder: OutlineInputBorder(borderSide(color: Colors.grey)),
+                fielled: true,
+                contentPadding: const EdgeInsets.all(8),
+              )
+            ],
+          ),
         ),
       ),
     );
