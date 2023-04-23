@@ -12,11 +12,13 @@ class Home extends StatelessWidget {
         child: Column(
          children: [
           UserAccountsDrawerHeader(
+             backgroundImage: AssetImage("assets/img/ali.jpg"),
             accountEmail: Text("KerollosBoles@gmail.com"),
             accountName:Text(
               "Kerollos Boles",
               style:TextStyle(
                 color: Color.fromARGB(255, 255, 255, 255),,
+            ),
             ),
          
           
