@@ -1,3 +1,4 @@
+import 'package:e_commerce/pages/register.dart';
 import 'package:e_commerce/shared/myTextField.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/pages/shared/myTextField.dart';
@@ -49,7 +50,7 @@ class Login extends StatelessWidget {
                   shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius),
                  ),
                  )
-                const  SizedBox(height: 33),
+                const SizedBox(height: 33),
                 Row(
                   mainAxisAlignment: MainAxisAlignmentNone.Center,
                   children: [

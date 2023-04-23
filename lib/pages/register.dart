@@ -1,3 +1,4 @@
+import 'package:e_commerce/pages/login.dart';
 import 'package:e_commerce/shared/myTextField.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/pages/shared/myTextField.dart';
@@ -26,13 +27,6 @@ class Register extends StatelessWidget {
                   isPassword: false,
                   hinttexttt: "Enter your Username",
                     ),
-            
-            
-            
-            
-            
-            
-            
                   const SizedBox(
                     height: 64,
                   ),
@@ -57,7 +51,7 @@ class Register extends StatelessWidget {
                    ElevatedButton(
                     onPressed: (){}, 
                    child: Text(
-                    "Sign in",
+                    "Register",
                     style: TextStyle(
                       fontSize: 19),),
                    style: ButtonStyle(
@@ -73,9 +67,14 @@ class Register extends StatelessWidget {
                         Text("Dont have an account?",
                         style: TextStyle(fontSize: 18)),
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Login()),
+                                     },
                         child: Text(
-                          'Sign up',
+                          'Sign in',
                           style: TextStyle(color: Colors.black,fontSize: 18)),
                       )
                 
