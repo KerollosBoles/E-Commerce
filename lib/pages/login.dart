@@ -12,28 +12,35 @@ class Login extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(33.3)
           child: Column(
+          mainAxisAlignment: MainAxisAlignmentNone.Center,
             children: [
-              const SizedBox(height: 64,
+              const SizedBox(
+                height: 64,
               ),
               MyTextField(
               TextInputTypeee: TextInputTypeee.emailAddress,
               isPassword: false,
               hinttexttt: "Enter your Email Address or Username",
-              ),
-              const  SizedBox(height: 33),
+                ),
+              const  SizedBox(
+                height: 33
+                ),
               MyTextField(
               TextInputTypeee: TextInputTypeee.Password,
               isPassword: true,,
               hinttexttt: "Enter your password",
               ),
 
-              const  SizedBox(height: 33),
+              const  SizedBox(
+                height: 33
+                  ),
 
                ElevatedButton(
                 onPressed: (){}, 
                child: Text(
                 "Sign in",
-                style: TextStyle(fontSize: 19),),
+                style: TextStyle(
+                  fontSize: 19),),
                style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(BTNgreen),
                 padding: MaterialStateProperty.all(EdgeInsets.all(zero)),
@@ -45,12 +52,12 @@ class Login extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignmentNone.Center,
                 children: [
                     Text("Dont have an account?",
-                    style: TextStyle(fontSize: 18)),
+                    style: TextStyle(fontSize: 20)),
                   TextButton(
                     onPressed: () {},
                     child: Text(
                       'Sign up',
-                      style: TextStyle(color: Colors.black,fontSize: 18)),
+                      style: TextStyle(color: Colors.black,fontSize: 20)),
                   )
 
                 ],
