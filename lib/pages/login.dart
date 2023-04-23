@@ -57,7 +57,12 @@ class Login extends StatelessWidget {
                       Text("Dont have an account?",
                       style: TextStyle(fontSize: 18)),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Register()),
+                                     },
                       child: Text(
                         'Sign up',
                         style: TextStyle(color: Colors.black,fontSize: 18)),
