@@ -19,7 +19,11 @@ class Home extends StatelessWidget {
                       Text("8",
                       style: TextStyle(color: Color.fromARGB(255,0,0,0)
                       ),
-                      ),
+                       padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                      color: Color.fromARGB(211, 164, 255, 193),
+                      shape: BoxShape.circle),
+                      
                  children: [
                    IconButton(
                     onPressed: () {},
