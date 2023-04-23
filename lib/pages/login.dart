@@ -1,6 +1,8 @@
 import 'package:e_commerce/shared/myTextField.dart';
 import 'package:flutter/material.dart';
 import 'package:e_commerce/pages/shared/myTextField.dart';
+
+import '../shared/constant_colors.dart';
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
   @override
@@ -31,7 +33,7 @@ class Login extends StatelessWidget {
                 onPressed: (){}, 
                child: Text("click here", style: TextStyle(fontSize: 19),),
                style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.orange),
+                backgroundColor: MaterialStateProperty.all(BTNgreen),
                 padding: MaterialStateProperty.all(EdgeInsets.all(zero)),
                 shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius),
                ),
