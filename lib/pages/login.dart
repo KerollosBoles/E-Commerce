@@ -31,13 +31,28 @@ class Login extends StatelessWidget {
 
                ElevatedButton(
                 onPressed: (){}, 
-               child: Text("click here", style: TextStyle(fontSize: 19),),
+               child: Text(
+                "Sign in",
+                style: TextStyle(fontSize: 19),),
                style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(BTNgreen),
                 padding: MaterialStateProperty.all(EdgeInsets.all(zero)),
                 shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius),
                ),
                )
+              const  SizedBox(height: 33),
+              Row(
+                children: [
+                  Text("data"),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Sign up',
+                      style: TextStyle(color: Colors.black)),
+                  )
+
+                ],
+                )
 
             ],
           ),
