@@ -1,6 +1,6 @@
-import 'package:e_commerce/shared/const_text_field.dart';
+import 'package:e_commerce/shared/myTextField.dart';
 import 'package:flutter/material.dart';
-import 'package:e_commerce/pages/shared/const_text_field.dart';
+import 'package:e_commerce/pages/shared/myTextField.dart';
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
   @override
@@ -15,8 +15,8 @@ class Login extends StatelessWidget {
               ),
               MyTextField(),
               SizedBox(height: 33),
-              
-                      
+              MyTextField(),
+                     
             ],
           ),
         ),
