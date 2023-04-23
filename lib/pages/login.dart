@@ -13,10 +13,18 @@ class Login extends StatelessWidget {
             children: [
               const SizedBpx(height: 64,
               ),
-              MyTextField(),
-              SizedBox(height: 33),
-              MyTextField(),
-                     
+              MyTextField(
+              TextInputTypeee: TextInputTypeee.emailAddress,
+              isPassword: false,
+              hinttexttt: "Enter your Email Address or Username",
+              ),
+                SizedBox(height: 33),
+              MyTextField(
+              TextInputTypeee: TextInputTypeee.Password,
+              isPassword: true,,
+              hinttexttt: "Enter your password",
+              ),
+                   
             ],
           ),
         ),
