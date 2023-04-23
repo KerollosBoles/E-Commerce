@@ -12,10 +12,14 @@ class Home extends StatelessWidget {
         actions:[
           Row(
             children: [
-
-               
                Stack(
-                  Text("8"),
+                children: [
+                  Container(
+                    child:
+                      Text("8",
+                      style: TextStyle(color: Color.fromARGB(255,0,0,0)
+                      ),
+                      ),
                  children: [
                    IconButton(
                     onPressed: () {},
@@ -36,6 +40,8 @@ class Home extends StatelessWidget {
         ],
         title: Text("Home"),
       ),
+        ],
     );
+
   }
 }
