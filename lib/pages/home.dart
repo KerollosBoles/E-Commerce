@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
         child: Column(
          children: [
           UserAccountsDrawerHeader(
-             backgroundImage: AssetImage("assets/img/ali.jpg"),
+             BackgroendImage: AssetImage("D:\Projects\e_commerce\e_commerce\assets\image\02.jpeg"),
             accountEmail: Text("KerollosBoles@gmail.com"),
             accountName:Text(
               "Kerollos Boles",
@@ -20,8 +20,7 @@ class Home extends StatelessWidget {
                 color: Color.fromARGB(255, 255, 255, 255),,
             ),
             ),
-         
-          
+            
             ],
         ),
 
