@@ -12,7 +12,10 @@ class Home extends StatelessWidget {
         child: Column(
          children: [
           UserAccountsDrawerHeader(
-             BackgroendImage: AssetImage("D:\Projects\e_commerce\e_commerce\assets\image\02.jpeg"),
+            cuurentAccountPicture: CircleAvatar(
+              radius: 55,
+             backgroendImage: AssetImage("assets/image/02.jpeg"),
+             )
             accountEmail: Text("KerollosBoles@gmail.com"),
             accountName:Text(
               "Kerollos Boles",
