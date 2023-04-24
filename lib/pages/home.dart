@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
             curentAccountPicture: CircleAvatar(
               radius: 55,
              backgroendImage: AssetImage("assets/image/01.jpg"),
-             )
+             ),
             accountEmail: Text("KerollosBoles@gmail.com"),
             accountName:Text(
               "Kerollos Boles",
@@ -54,14 +54,15 @@ class Home extends StatelessWidget {
            title: Text("Logout"),
            leading: Icon(Icons.exit_to_app),
            onTap: () { }
-         ),
-        
+        ),    
 ],
-
 ),
-
       ),  
-
+Container(
+   margin: EdgeInsets.only(bottom: 12),
+   child: Text("Developed by Kerollos Boles © 2022",
+ style: TextStyle(fontSize: 16)),
+ )
 
 
 
