@@ -12,9 +12,15 @@ class Home extends StatelessWidget {
         child: Column(
          children: [
           UserAccountsDrawerHeader(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+              image: AssetImage("assets/image/02.jpeg"), 
+              fit: BoxFit.cover),
+            ),
+
             curentAccountPicture: CircleAvatar(
               radius: 55,
-             backgroendImage: AssetImage("assets/image/02.jpeg"),
+             backgroendImage: AssetImage("assets/image/01.jpg"),
              )
             accountEmail: Text("KerollosBoles@gmail.com"),
             accountName:Text(
@@ -24,11 +30,35 @@ class Home extends StatelessWidget {
             ),
             ),
             
-            ],
-        ),
+            
+        
+        ListTile(
+           title: Text("Home"),
+           leading: Icon(Icons.home),
+           onTap: () { }
+         ),
+          
+         ListTile(
+           title: Text("My products"),
+           leading: Icon(Icons.add_shopping_cart),
+           onTap: () { }
+         ),
+        
+         ListTile(
+           title: Text("About"),
+           leading: Icon(Icons.help_center),
+           onTap: () { }
+         ),
+        
+         ListTile(
+           title: Text("Logout"),
+           leading: Icon(Icons.exit_to_app),
+           onTap: () { }
+         ),
+        
+],
 
-
-
+),
 
       ),  
 
