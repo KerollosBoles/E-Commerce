@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../shared/constant_colors.dart';
+import '../model/item.dart';
 
 class Home extends StatelessWidget {
 
