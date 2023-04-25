@@ -4,6 +4,7 @@ import 'package:e_commerce/pages/register.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:e_commerce/pages/details_screen.dart';
 
 class MyWidget extends StatelessWidget {
   const MyWidget({Key? key}) : super(key: key);
@@ -12,7 +13,7 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      home: Details(),
     );
   }
 }

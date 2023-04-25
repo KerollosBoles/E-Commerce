@@ -5,11 +5,14 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 class Home extends StatelessWidget {   
- const  Home ({Key? key}) : super(key: key);
+ const  Home ({Key?key} : super(key:key));
 
   @override
   Widget build(BuildContext context) {
-    var padding2 = Padding(
+    return SafeArea(
+      child: Scaffold(
+
+        body: Padding(
           padding: const EdgeInsets.only(top:22),
           child: GridView.builder(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -60,15 +63,7 @@ class Home extends StatelessWidget {
             
             },
             ),
-        );
-    var scaffold = Scaffold(
-
-        body: padding2,
-
-
-
-
-
+        ),
       drawer: Drawer(
         child: Column(
          children: [
@@ -170,13 +165,6 @@ class Home extends StatelessWidget {
 ),
       ),  
 
-
-
-
-
-
-
-
         appBar: AppBar(
  backgroundColor: Color.fromARGB(255, 76, 141, 95),
  title: Text("Home"),
@@ -208,7 +196,7 @@ class Home extends StatelessWidget {
  )
  ],
  ),
-;
-    return SafeArea(
-      child: scaffold}
+
+        
+}
   }
