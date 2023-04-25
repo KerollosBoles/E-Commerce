@@ -1,7 +1,7 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import '../shared/constant_colors.dart';
-
+import 'package:flutter/material.dart';
 class Details extends StatelessWidget {
   const Details({Key? key}) : super(key: key);
 
@@ -45,9 +45,56 @@ class Details extends StatelessWidget {
         [
           Image.assets("assets/image/images (1).jpeg"),
           SizedBox(height:11),,
-          Text("\$ 1234.99", style: TextStyle(fontSize: 20),
+          Text("\$ 1234.99", style: TextStyle(fontSize: 20)),
           SizedBox(height:16),
-          
+          Row(
+            children:[
+             Container(
+              padding: const EdgeInsets.all(4),
+              child:
+                Text("New",style: TextStyle(fontSize: 15)),
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255,255,129,129),
+                  borderRadius: Edge: BorderRadius.circular(4),
+                ),
+             
+             ) 
+            Row(
+              // ignore: prefer_const_literals_to_create_immutables
+              children: [
+                Icon(
+                  Icons.star,
+                  size: 26
+                  color: Color.fromARGB(255,255,191,0)
+                  ),
+                    Icon(
+                  Icons.star,
+                  size: 26
+                  color: Color.fromARGB(255,255,191,0)
+                  ),
+              
+                Icon(
+                  Icons.star,
+                  size: 26
+                  color: Color.fromARGB(255,255,191,0)
+                  ),
+],
+                Icon(
+                  Icons.star,
+                  size: 26
+                  color: Color.fromARGB(255,255,191,0)
+                  ),
+              
+                Icon(
+                  Icons.star,
+                  size: 26
+                  color: Color.fromARGB(255,255,191,0)
+                  ),
+              ],
+              ],
+            ),
+            ]
+          ),
           
           ]
       )
