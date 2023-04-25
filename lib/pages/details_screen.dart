@@ -59,7 +59,7 @@ class Details extends StatelessWidget {
                 height: 11,
               ),
               Text(
-                "\$ 12.99",
+                "\$ ${widget.product.price}",
                 style: TextStyle(fontSize: 20),
               ),
               SizedBox(
