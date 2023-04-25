@@ -25,7 +25,7 @@ class Home extends StatelessWidget {
                 onTap: (){
                   Navigator.push(
                     context,
-                    MaterialPageRoute(),
+                    MaterialPageRoute(builder: (context)=> Details(product): items[0] ),
                     )
                 } ,
                 child: GridTile(
