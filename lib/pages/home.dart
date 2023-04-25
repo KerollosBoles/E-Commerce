@@ -1,24 +1,13 @@
 import 'package:flutter/material.dart';
-
-
-class Item (
-  String imgPath;
-  double price;
-  Item({required this.imgPath, required this.price});
-)
-
-
-
 import '../shared/constant_colors.dart';
+
 class Home extends StatelessWidget {
 
 
 
-  const Home({Key?key} : super(key:key));
-    List items =[Item(imgPath: "kerollos kerollos", price:12.99)
-                  Item(imgPath: "kerollos kerollos", price:12.99)
-                  Item(imgPath: "kerollos kerollos", price:12.99)
-                  Item(imgPath: "kerollos kerollos", price:12.99)];
+    
+    
+   Home ({Key?key} : super(key:key));
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +18,11 @@ class Home extends StatelessWidget {
           padding: const EdgeInsets.only(top:22),
           child: GridView.builder(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount:2,
+            crossAxisCount: 2,
             childAspectRatio: 3/2,
             crossAxisSpacing: 10,
             mainAxisSpacing: 33,),
-            itemCount: 4,
+            itemCount: items.length,
             itemBuilder: (BuildContext context,int index){
               return GestureDetector(
                 onTap: (){} ,
@@ -48,7 +37,8 @@ class Home extends StatelessWidget {
                           left: 0,
                          child: ClipRRect(
                                        borderRadius: BorderRadius.circular(55),
-                                       child: Image.asset("img PATH"),
+                                       child: Image.asset(items[index].imgPath),
+                                       ),
                                 
                            footer: GridTileBar(
                           backgroundColor: Color.fromARGB(66, 73, 127, 110),
