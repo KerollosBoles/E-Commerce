@@ -1,21 +1,15 @@
 import 'package:flutter/material.dart';
 import '../shared/constant_colors.dart';
 import '../model/item.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/src/widgets/placeholder.dart';
 
-class Home extends StatelessWidget {
-
-
-
-    
-    
-   Home ({Key?key} : super(key:key));
+class Home extends StatelessWidget {   
+ const  Home ({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-
-        body: Padding(
+    var padding2 = Padding(
           padding: const EdgeInsets.only(top:22),
           child: GridView.builder(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -64,8 +58,12 @@ class Home extends StatelessWidget {
             
             
             
-            }),
-        ),
+            },
+            ),
+        );
+    var scaffold = Scaffold(
+
+        body: padding2,
 
 
 
@@ -210,6 +208,7 @@ class Home extends StatelessWidget {
  )
  ],
  ),
-
+;
+    return SafeArea(
+      child: scaffold}
   }
-}
