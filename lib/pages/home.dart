@@ -1,8 +1,24 @@
 import 'package:flutter/material.dart';
 
+
+class Item (
+  String imgPath;
+  double price;
+  Item({required this.imgPath, required this.price});
+)
+
+
+
 import '../shared/constant_colors.dart';
 class Home extends StatelessWidget {
+
+
+
   const Home({Key?key} : super(key:key));
+    List items =[Item(imgPath: "kerollos kerollos", price:12.99)
+                  Item(imgPath: "kerollos kerollos", price:12.99)
+                  Item(imgPath: "kerollos kerollos", price:12.99)
+                  Item(imgPath: "kerollos kerollos", price:12.99)];
 
   @override
   Widget build(BuildContext context) {
@@ -32,10 +48,10 @@ class Home extends StatelessWidget {
                           left: 0,
                          child: ClipRRect(
                                        borderRadius: BorderRadius.circular(55),
-                                       child: Image.asset("img PATH")
+                                       child: Image.asset("img PATH"),
                                 
                            footer: GridTileBar(
-                          // backgroundColor: Color.fromARGB(66, 73, 127, 110),
+                          backgroundColor: Color.fromARGB(66, 73, 127, 110),
                               trailing: IconButton(
                                 color: Color.fromARGB(255, 62, 94, 70),
                                 onPressed: () { },
