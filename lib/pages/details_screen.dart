@@ -9,6 +9,7 @@ class Details extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         backgroundColor: Color.fromARGB(255, 76, 141, 95),
         title: Text("Details Screen"),
         actions: [
@@ -34,10 +35,22 @@ class Details extends StatelessWidget {
                 child: Text("\$ 128"),
               )
             ],
-          )
+          ),
         ],
       ),
-      body: Text("Data"),
+     
+     
+      body: Column(
+        children:
+        [
+          Image.assets("assets/image/images (1).jpeg"),
+          SizedBox(height:11),,
+          Text("\$ 1234.99", style: TextStyle(fontSize: 20),
+          SizedBox(height:16),
+          
+          
+          ]
+      )
     );
   }
 }
