@@ -54,7 +54,7 @@ class Details extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset("assets/img/2.webp"),
+              Image.asset(widget.product.imgPath),
               SizedBox(
                 height: 11,
               ),
