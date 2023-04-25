@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import '../shared/constant_colors.dart';
-import '../model/item.dart';
+ import '../model/item.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-
+import 'package:e_commerce/pages/details_screen.dart';
 class Home extends StatelessWidget {   
  const  Home ({Key?key} : super(key:key));
 
@@ -23,7 +22,12 @@ class Home extends StatelessWidget {
             itemCount: items.length,
             itemBuilder: (BuildContext context,int index){
               return GestureDetector(
-                onTap: (){} ,
+                onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(),
+                    )
+                } ,
                 child: GridTile(
                       child: Stack(
                        children: [
