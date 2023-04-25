@@ -8,6 +8,30 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+
+        body: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount:2,
+          childAspectRatio: 3/2,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 33,),
+          itemCount: 4,
+          itemBuilder: (BuildContext context,int index){
+            return GridTile(
+         
+   ),
+
+
+            )
+          
+          
+          
+          }),
+
+
+
+
+
       drawer: Drawer(
         child: Column(
          children: [
@@ -100,14 +124,15 @@ class Home extends StatelessWidget {
              
              ],
            ),
-         ],
-),
-      ),  
-Container(
+           Container(
    margin: EdgeInsets.only(bottom: 12),
    child: Text("Developed by Kerollos Boles © 2022",
  style: TextStyle(fontSize: 16)),
  )
+         ],
+),
+      ),  
+
 
 
 
