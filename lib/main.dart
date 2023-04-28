@@ -6,6 +6,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:e_commerce/pages/details_screen.dart';
 import 'package:provider/provider.dart';
+import 'package:e_commerce/provider/cart.dart';
 
 class MyWidget extends StatelessWidget {
   const MyWidget({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) {
-        return ClassName();
+        return Cart();
       },
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

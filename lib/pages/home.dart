@@ -3,6 +3,8 @@ import '../model/item.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:e_commerce/pages/details_screen.dart';
+import 'package:provider/provider.dart';
+import 'package:e_commerce/provider/cart.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -140,7 +142,9 @@ class Home extends StatelessWidget {
             ),
           ],
           backgroundColor: appbarGreen,
-          title: Text("Home"),
+          title: Consumer<Cart>(builder: ((context, classInstance, child) {
+            return Text("${classInstance.myName}");
+          })),
         ));
   }
 }
