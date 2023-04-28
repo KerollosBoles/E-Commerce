@@ -65,12 +65,12 @@ class Home extends StatelessWidget {
                   UserAccountsDrawerHeader(
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("assets/img/02.jpg"),
+                          image: AssetImage("assets/image/01.jpg"),
                           fit: BoxFit.cover),
                     ),
                     currentAccountPicture: CircleAvatar(
                         radius: 55,
-                        backgroundImage: AssetImage("assets/image/01.jpg")),
+                        backgroundImage: AssetImage("assets/image/02.jpg")),
                     accountEmail: Text("KerollosBoles@gmail.com.com"),
                     accountName: Text("Kerollos Boles",
                         style: TextStyle(
