@@ -11,6 +11,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Carttt = provider.of<Cart>(context);
     return Scaffold(
         body: Padding(
           padding: const EdgeInsets.only(top: 22),
