@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import '../model/item.dart';
 
 class Cart with ChangeNotifier {
-  String myName = "kerollos";
+  List selectedProducts = [];
+
+  add(Item product) {
+    selectedProducts.add(product);
+  }
 }
