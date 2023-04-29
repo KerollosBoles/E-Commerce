@@ -11,7 +11,8 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Carttt = provider.of<Cart>(context);
+    final Carttt = Provider.of<Cart>(context);
+
     return Scaffold(
         body: Padding(
           padding: const EdgeInsets.only(top: 22),
@@ -45,17 +46,16 @@ class Home extends StatelessWidget {
                       ),
                     ]),
                     footer: GridTileBar(
-                      backgroundColor: Color.fromARGB(66, 73, 127, 110),
-                      trailing:
-                          Consumer<Cart>(builder: ((context, Carttt, child) {
-                        return IconButton(
-                            color: Color.fromARGB(255, 62, 94, 70),
-                            onPressed: () {
-                              Carttt.add(items[index]);
-                            },
-                            icon: Icon(Icons.add));
-                      })),
+// backgroundColor: Color.fromARGB(66, 73, 127, 110),
+                      trailing: IconButton(
+                          color: Color.fromARGB(255, 62, 94, 70),
+                          onPressed: () {
+                            Carttt.add(items[index]);
+                          },
+                          icon: Icon(Icons.add)),
+
                       leading: Text("\$12.99"),
+
                       title: Text(
                         "",
                       ),
@@ -70,41 +70,16 @@ class Home extends StatelessWidget {
             children: [
               Column(
                 children: [
-                   Consumer<ClassName>(
-                        builder: ((context, classInstancee, child) {
-                        return  Stack(
-                  children: [
-                    Positioned(
-                      bottom: 24,
-                      child: Container(
-                          child: Text( 
-                            "0",
-                            style: TextStyle(
-                                fontSize: 16,
-                                color: Color.fromARGB(255, 0, 0, 0)),
-                          ),
-                          padding: EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                              color: Color.fromARGB(211, 164, 255, 193),
-                              shape: BoxShape.circle)),
-                    ),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(Icons.add_shopping_cart),
-                    ),
-                  ],
-                );
-                      })),
                   UserAccountsDrawerHeader(
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("assets/image/01.jpg"),
+                          image: AssetImage("assets/img/01.jpg"),
                           fit: BoxFit.cover),
                     ),
                     currentAccountPicture: CircleAvatar(
                         radius: 55,
-                        backgroundImage: AssetImage("assets/image/02.jpg")),
-                    accountEmail: Text("KerollosBoles@gmail.com.com"),
+                        backgroundImage: AssetImage("assets/img/02.jpg")),
+                    accountEmail: Text("KerollosBoles.com"),
                     accountName: Text("Kerollos Boles",
                         style: TextStyle(
                           color: Color.fromARGB(255, 255, 255, 255),
@@ -130,38 +105,16 @@ class Home extends StatelessWidget {
               ),
               Container(
                 margin: EdgeInsets.only(bottom: 12),
-                child: Text("Developed by Kerollos Boles © 2022",
+                child: Text("Developed by Ali Hassan © 2022",
                     style: TextStyle(fontSize: 16)),
               )
             ],
           ),
         ),
         appBar: AppBar(
-          actions: [
-            Row(
-              children: [ 
-              Consumer<ClassName>(
-                  builder: ((context, CartInstancee, child) {
-                  return Padding(
-                  padding: const EdgeInsets.only(right: 12),
-                  child: Text(
-                    "\$ ${CartInstancee.price}",
-                    style: TextStyle(fontSize: 18),
-                  ),
-                ),;
-                })),
-              
-                
-              ],
-            ),
-          ],
+          actions: [ProductsAndPrice()],
           backgroundColor: appbarGreen,
           title: Text("Home"),
         ));
   }
 }
-/*  ,*/
-
-
-/*
- 
