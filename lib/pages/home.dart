@@ -69,15 +69,15 @@ class Home extends StatelessWidget {
             children: [
               Column(
                 children: [
-                   Consumer<Cart>(
-                        builder: ((context, CartInstance, child) {
+                   Consumer<ClassName>(
+                        builder: ((context, classInstancee, child) {
                         return  Stack(
                   children: [
                     Positioned(
                       bottom: 24,
                       child: Container(
                           child: Text( 
-                            "$(CartInstance.selectedProducts.length)",
+                            "0",
                             style: TextStyle(
                                 fontSize: 16,
                                 color: Color.fromARGB(255, 0, 0, 0)),
@@ -138,15 +138,19 @@ class Home extends StatelessWidget {
         appBar: AppBar(
           actions: [
             Row(
-              children: [
-              
-                Padding(
+              children: [ 
+              Consumer<ClassName>(
+                  builder: ((context, CartInstancee, child) {
+                  return Padding(
                   padding: const EdgeInsets.only(right: 12),
                   child: Text(
                     "\$ 0",
                     style: TextStyle(fontSize: 18),
                   ),
-                ),
+                ),;
+                })),
+              
+                
               ],
             ),
           ],
