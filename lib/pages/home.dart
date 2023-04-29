@@ -77,7 +77,7 @@ class Home extends StatelessWidget {
                       bottom: 24,
                       child: Container(
                           child: Text( 
-                            "$(CartInstance.selectedProducts)",
+                            "$(CartInstance.selectedProducts.length)",
                             style: TextStyle(
                                 fontSize: 16,
                                 color: Color.fromARGB(255, 0, 0, 0)),
