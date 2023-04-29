@@ -3,6 +3,7 @@ import '../model/item.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:e_commerce/pages/details_screen.dart';
+import 'package:provider/provider.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -44,16 +45,12 @@ class Home extends StatelessWidget {
                     footer: GridTileBar(
                       backgroundColor: Color.fromARGB(66, 73, 127, 110),
                       trailing: Consumer<ClassName>(
-                        builder: ((context, classInstancee, child) {
+                          builder: ((context, classInstancee, child) {
                         return IconButton(
-                          color: Color.fromARGB(255, 62, 94, 70),
-                          onPressed: () {
-                            
-
-                          },
-                          icon: Icon(Icons.add))
+                            color: Color.fromARGB(255, 62, 94, 70),
+                            onPressed: () {},
+                            icon: Icon(Icons.add));
                       })),
-
                       leading: Text("\$12.99"),
                       title: Text(
                         "",
