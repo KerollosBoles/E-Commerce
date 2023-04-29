@@ -44,7 +44,7 @@ class Home extends StatelessWidget {
                     ]),
                     footer: GridTileBar(
                       backgroundColor: Color.fromARGB(66, 73, 127, 110),
-                      trailing: Consumer<ClassName>(
+                      trailing: Consumer<Cart>(
                           builder: ((context, classInstancee, child) {
                         return IconButton(
                             color: Color.fromARGB(255, 62, 94, 70),
