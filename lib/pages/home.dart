@@ -70,14 +70,14 @@ class Home extends StatelessWidget {
               Column(
                 children: [
                    Consumer<Cart>(
-                        builder: ((context, Carttt, child) {
+                        builder: ((context, CartInstance, child) {
                         return  Stack(
                   children: [
                     Positioned(
                       bottom: 24,
                       child: Container(
                           child: Text( 
-                            "0",
+                            "$(CartInstance.selectedProducts)",
                             style: TextStyle(
                                 fontSize: 16,
                                 color: Color.fromARGB(255, 0, 0, 0)),
@@ -93,7 +93,7 @@ class Home extends StatelessWidget {
                     ),
                   ],
                 );
-                      }))
+                      })),
                   UserAccountsDrawerHeader(
                     decoration: BoxDecoration(
                       image: DecorationImage(
