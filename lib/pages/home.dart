@@ -43,10 +43,9 @@ class Home extends StatelessWidget {
                     ]),
                     footer: GridTileBar(
                       backgroundColor: Color.fromARGB(66, 73, 127, 110),
-                      trailing: IconButton(
-                          color: Color.fromARGB(255, 62, 94, 70),
-                          onPressed: () {},
-                          icon: Icon(Icons.add)),
+                      trailing:
+                      })),
+
                       leading: Text("\$12.99"),
                       title: Text(
                         "",
@@ -144,3 +143,7 @@ class Home extends StatelessWidget {
         ));
   }
 }
+/*  ,*/
+
+
+
