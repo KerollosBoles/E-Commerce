@@ -6,7 +6,7 @@ class Cart with ChangeNotifier {
   double price =0;
   add(Item product) {
     selectedProducts.add(product);
-    price += product.price;
+    price += product.price.round();
     notifyListeners()
   }
 }
