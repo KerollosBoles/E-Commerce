@@ -144,7 +144,7 @@ class Home extends StatelessWidget {
                   return Padding(
                   padding: const EdgeInsets.only(right: 12),
                   child: Text(
-                    "\$ 0",
+                    "\$ ${CartInstancee.price}",
                     style: TextStyle(fontSize: 18),
                   ),
                 ),;
