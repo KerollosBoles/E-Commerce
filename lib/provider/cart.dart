@@ -6,5 +6,6 @@ class Cart with ChangeNotifier {
 
   add(Item product) {
     selectedProducts.add(product);
+    notifyListeners()
   }
 }
